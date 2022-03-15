@@ -20,4 +20,4 @@ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-With Typescript [https://github.com/Santosl2/frontend-test-js](https://github.com/Santosl2/frontend-test-js)
+With Typescript [https://github.com/Santosl2/frontend-test](https://github.com/Santosl2/frontend-test)
