@@ -1,0 +1,31 @@
+.btn {
+  background: var(--purple-1);
+  min-width: 100px;
+  border: none;
+  border-radius: 4px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  height: 35px;
+  font-weight: bold;
+  transition: background 0.3s linear;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--purple-2);
+}
+
+.grey {
+  background: var(--gray-1);
+}
+
+.grey:hover {
+  background: var(--gray-2);
+}
+.red {
+  background: var(--red-1);
+}
+
+.red:hover {
+  background: var(--red-2);
+}
