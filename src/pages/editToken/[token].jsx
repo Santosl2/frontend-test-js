@@ -41,7 +41,7 @@ const EditToken = () => {
     }
 
     saveToken(token, {
-      token: tokenValue,
+      token: tokenValue.toUpperCase(),
       balance: balanceValue,
     });
 
