@@ -24,7 +24,7 @@ const AddToken = () => {
     }
 
     addToken({
-      token: tokenValue,
+      token: tokenValue.toUpperCase(),
       balance: balanceValue,
     });
 

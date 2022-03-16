@@ -1,6 +1,7 @@
 import { Button, Logo, ShootingStar } from "../components";
 import { FiEdit } from "react-icons/fi";
 import { useToken } from "../hooks/useToken";
+import { formatMoney } from "../utils/FormatMoney";
 
 const Home = () => {
   const { tokens } = useToken();
@@ -38,11 +39,7 @@ const Home = () => {
                       <FiEdit size={16} />
                     </td>
                     <td>{token.token}</td>
-                    <td>
-                      {new Intl.NumberFormat("pt-BR").format(
-                        Number(token.balance)
-                      )}
-                    </td>
+                    <td>{formatMoney(token.balance)}</td>
                   </tr>
                 );
               })}

@@ -1,5 +1,5 @@
 import { useRouter } from "next/router";
-import { BaseSyntheticEvent, useEffect } from "react";
+import { useEffect } from "react";
 import {
   Button,
   Input,
@@ -8,6 +8,7 @@ import {
   ShootingStar,
 } from "../../components";
 import { useToken } from "../../hooks/useToken";
+import { formatMoney } from "../../utils/FormatMoney";
 
 const EditToken = () => {
   const { findTokenByTokenName, tokenExists, deleteToken, saveToken } =
@@ -83,9 +84,7 @@ const EditToken = () => {
             <Input
               id="balance"
               name="balance"
-              defaultValue={new Intl.NumberFormat("pt-BR").format(
-                Number(tokenData?.balance)
-              )}
+              defaultValue={formatMoney(tokenData?.balance)}
               required
             />
           </InputGroup>
